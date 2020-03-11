@@ -9,13 +9,14 @@ import GetStarted from "./get-started/getStarted";
 import Login from "./login/Login";
 
 const Routes = () => {
-  
+
   const Stack = createStackNavigator();
 
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
-        headerShown: false
+        headerShown: false,
+        cardStyle: { backgroundColor: 'white' },
       }}>
         <Stack.Screen name="GetStarted" component={GetStarted} />
         <Stack.Screen
